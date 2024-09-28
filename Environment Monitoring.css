@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.header-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.status-info {
+    font-size: 1em;
+}
+
+.status-info .alarms {
+    color: red;
+}
+
+.navbar {
+    background-color: rgb(33, 33, 33);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.5s ease;
+}
+.navbar ul li a:hover{
+     background-color: #FF7200;
+}
+.container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.monitoring-type {
+    margin-bottom: 20px;
+}
+
+.monitor-list ul {
+    list-style: none;
+}
+
+.monitor-list li {
+    margin-bottom: 10px;
+}
+
+.monitor-list li.status-red {
+    color: red;
+}
+
+.monitor-list li.status-green {
+    color: green;
+}
+
+.monitor-list a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.report-section {
+    width: 75%;
+    padding: 20px;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section label {
+    margin-right: 10px;
+}
+
+.filter-section input {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-btn {
+    padding: 5px 10px;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.search-btn:hover{
+    background-color: #ff7200;
+}
+.chart-section {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.log-table {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.log-table h3 {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.export-options {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: none;
+    width: 100%;
+    bottom: 0;
+}

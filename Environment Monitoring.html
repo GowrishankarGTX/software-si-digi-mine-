@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI DIGI MINE - Environmental Monitoring</title>
+    <link rel="stylesheet" href="Environment Monitoring.css">
+    <link rel="icon" href="img/logo of si digi mine.jpeg">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="IMG/logo 2.jpeg" alt="SI DIGI MING">
+        </div>
+        <div class="header-title">Environmental Monitoring</div>
+        <div class="status-info">
+            <span>58 Personnel In Mine</span>
+            <span>Alarms: <span class="alarms">2</span></span>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="#">SYSTEM STATUS</a></li>
+            <li><a href="#">REPORT</a></li>
+            <li><a href="master/dashboad/index.html">DASHBOARD</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Environmental Monitoring Reports</h2>
+            <div class="monitoring-type">
+                <label for="monitoringType">Select Monitoring Type:</label>
+                <select id="monitoringType">
+                    <option value="all">All monitoring types</option>
+                </select>
+            </div>
+            <div class="monitor-list">
+                <ul>
+                    <li class="status-red">NTH125-Ammonia <a href="#">view</a></li>
+                    <li class="status-red">NTH125-Oxygen <a href="#">view</a></li>
+                    <li class="status-green">NTH150-Airflow <a href="#">view</a></li>
+                    <li class="status-green">NTH150-CO <a href="#">view</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="report-section">
+            <h2>NTH125-Wet Bulb</h2>
+            <div class="filter-section">
+                <label for="fromDate">From:</label>
+                <input type="date" id="fromDate">
+                <input type="time" id="fromTime">
+
+                <label for="toDate">To:</label>
+                <input type="date" id="toDate">
+                <input type="time" id="toTime">
+
+                <button class="search-btn">Search</button>
+            </div>
+
+            <div class="chart-section">
+                <img src="img/TEMP.png" alt="Environmental Data Graph">
+            </div>
+
+            <div class="log-table">
+                <h3>Monitor Log</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Average Value</th>
+                            <th>Log Time</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>18.9 deg C</td>
+                            <td>2024-09-09 13:32</td>
+                            <td>00:05:18</td>
+                        </tr>
+                        <tr>
+                            <td>19.2 deg C</td>
+                            <td>2024-09-09 11:14</td>
+                            <td>02:18:17</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="export-options">
+                    <p>Export: <a href="#">CSV</a> | <a href="#">Excel</a> | <a href="#">PDF</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy;  2024 Shift Report Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
